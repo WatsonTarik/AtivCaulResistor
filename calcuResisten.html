@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title> Calculadora de resistência életrica </title>
+   
+  </head>
+  <body>
+
+    <style type="text/css">
+        body{
+            background-color: black;
+        }
+        .cor{
+            background-color: #6D214F;
+            color: white;
+        }
+        .cor1{
+            color: white;
+        }
+        .imgs{
+            position: absolute;
+            left: 330px;
+            width: 830px;
+            height: 700px;
+            background-image: url("resistor.png");
+            border: 8px solid #6D214F;
+        }
+
+    </style>
+
+    <form>
+    <fieldset>
+
+    <legend class="cor1"> Faixas do Resistor </legend>
+
+<label for="1Faixa" class="cor1"> 1° Faixa: </label>
+    <select name="faxa1" id="1Faixa" class="cor">
+        <option value="0"> Preto </option>
+        <option value="1"> Marrom </option>
+        <option value="2"> Vermelho </option>
+        <option value="3"> Laranja </option>
+        <option value="4"> Amarelo </option>
+        <option value="5"> Verde </option>
+        <option value="6"> Azul </option>
+        <option value="7"> Violeta </option>
+        <option value="8"> Cinza </option>
+        <option value="9"> Branco </option>
+    </select>
+
+    <hr>
+    <br>
+
+<label for="2Faixa" class="cor1"> 2° Faixa: </label>
+    <select name="faxa2" id="2Faixa" class="cor">
+        <option value="0"> Preto </option>
+        <option value="1"> Marrom </option>
+        <option value="2"> Vermelho </option>
+        <option value="3"> Laranja </option>
+        <option value="4"> Amarelo </option>
+        <option value="5"> Verde </option>
+        <option value="6"> Azul </option>
+        <option value="7"> Violeta </option>
+        <option value="8"> Cinza </option>
+        <option value="9"> Branco </option>
+</select>
+
+    <hr>
+    <br>
+
+<label for="3Faixa" class="cor1"> 3° Faixa: </label>
+    <select name="faxa3" id="3Faixa" class="cor">
+        <option value="0"> Preto </option>
+        <option value="1"> Marrom </option>
+        <option value="2"> Vermelho </option>
+        <option value="3"> Laranja </option>
+        <option value="4"> Amarelo </option>
+        <option value="5"> Verde </option>
+        <option value="6"> Azul </option>
+        <option value="7"> Violeta </option>
+        <option value="8"> Cinza </option>
+        <option value="9"> Branco </option></select>
+
+    <hr>
+    <br>
+
+<label for="4Faixa" class="cor1"> 4° Faixa: </label>
+    <select name="faxa4" id="4Faixa" class="cor"><option value="1"> Preto </option>
+        <option value="10"> Marrom </option>
+        <option value="100"> Vermelho </option>
+        <option value="1000"> Laranja </option>
+        <option value="10000"> Amarelo </option>
+        <option value="100000"> Verde </option>
+        <option value="1000000"> Azul </option>
+        <option value="10000000"> Violeta </option>
+        <option value="0.1"> Dourado </option>
+        <option value="0.01"> Prateado </option>
+</select>
+
+    <hr>
+    <br>
+
+<label for="5Faixa" class="cor1"> 5° Faixa: </label>
+    <select name="faxa5" id="5Faixa" class="cor">
+        <option value="0"> Preto </option>
+        <option value="0.01"> Marrom </option>
+        <option value="0.02"> Vermelho </option>
+        <option value="0.005"> Verde </option>
+        <option value="0.0025"> Azul </option>
+        <option value="0.0010"> Violeta </option>
+        <option value="0.0005"> Cinza </option>
+        <option value="0.05"> Dourado </option>
+        <option value="0.10"> Prateado </option>
+    </select>
+
+    <hr>
+    <br>
+
+    </fieldset>
+
+    <fieldset>
+        <legend class="cor1"> Resultado </legend>
+        <div id="resultado" class="cor1"></div>
+    </fieldset>
+    </form>
+
+    <p>
+    <button type="button" class="cor" onclick="pegarDados()"> Pronto </button>
+    </p>
+
+    <div class="imgs"></div>
+
+    <script src="calcuResisten.js"></script>
+    </body>
+</html>
